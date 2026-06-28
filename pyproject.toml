@@ -1,0 +1,24 @@
+[project]
+name = "textile-packing-planner"
+version = "0.1.0"
+description = "Desktop textile packing planner"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PySide6-Essentials>=6.7",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+package = [
+    "pyinstaller>=6.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "--basetemp=work/pytest-tmp"
+cache_dir = "work/pytest-cache"

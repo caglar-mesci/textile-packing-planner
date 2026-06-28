@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+work/pytest-cache/
+work/pytest-tmp/
+work/*.log
+work/*.sqlite3
+data/*.sqlite3
+exports/
+backups/
+build/
+dist/
+*.spec
