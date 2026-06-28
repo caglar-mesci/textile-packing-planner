@@ -147,30 +147,5 @@ When packaged as an EXE, application data is stored under the Windows user data 
 
 Backups contain the application database: products, rules, profiles, boxes, vehicles, settings, and saved plans. Excel exports are separate output files.
 
-## Git Hygiene
 
-The repository intentionally excludes generated and local files:
 
-- `.venv/`
-- `__pycache__/`
-- `.pytest_cache/`
-- `work/`
-- `data/*.sqlite3`
-- `exports/`
-- `backups/`
-- `build/`
-- `dist/`
-- `*.spec`
-
-This keeps GitHub focused on source code, tests, scripts, README, and mock data only.
-
-## GitHub Publish
-
-Create an empty GitHub repository, then connect and push:
-
-```powershell
-git remote add origin https://github.com/<owner>/<repo>.git
-git push -u origin main
-```
-
-Do not commit generated EXE/build folders. They are intentionally ignored.
